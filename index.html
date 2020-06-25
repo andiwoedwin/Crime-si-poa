@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime si poa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Form ni kureform</h1>
+    <div class="Top">
+        <div id="Navigation bar">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Our-work.html">Our work</a>
+            <a href="Contacts.html">Contacts</a>
+        </div>
+    </div>
+   
+<div class="slideshow-container">
+    <div class="mySlides fade">
+    <div class="numbertext">1/4</div>
+    <img src="912.jpg"> 
+    <div class="text">Some of our team activities</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">2/4</div>
+        <img src="crime.jpg"> 
+        <div class="text">Our achievements</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3/4</div>
+            <img src="912.jpg"> 
+            <div class="text">Our able team</div>
+            </div>
+         <div class="mySlides fade">
+            <div class="numbertext">4/4</div>
+            <img src="mabele.jpg"> style
+            <div class="text">Board of Directors</div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div>
+<span class="dot" onclick="currentslide(1)"></span>
+<span class="dot" onclick="currentslide(2)"></span>
+<span class="dot" onclick="currentslide(3)"></span>
+<span class="dot" onclick="currentslide(4)"></span>
+
+</div>
+</div>
+<script>
+    var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 10 seconds
+    }
+    </script>
+
+</body>
+</html>       
